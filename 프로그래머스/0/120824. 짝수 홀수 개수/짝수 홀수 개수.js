@@ -1,9 +1,6 @@
-function solution(num_list){
-    var answer = [];
-    var oddNum = 0;
-    var evenNum = 0;
+function solution(num_list) {
+    const answer = [0, 0];
+    num_list.forEach((item) => item%2 === 0 ? answer[0] += 1 : answer[1] += 1)
+    return answer;
+}
 
-for (var i = 0; i < num_list.length; i++){
-    var answer = (num_list[i] % 2 == 0) ? evenNum++: oddNum++;}
-    return [evenNum,oddNum];
-} 
